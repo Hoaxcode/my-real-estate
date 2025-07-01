@@ -12,13 +12,13 @@ export default function Header() {
           </h1>
         </Link>
 
-        <form className="bg-slate-100 p-3 rounded-lg flex items-center">
+        <form className="bg-slate-100 p-3 rounded-lg flex items-center ">
           <input
             type="text"
             name="#"
             id="#"
             placeholder="Search..."
-            className="focus:outline-none w-24 sm:w-64 "
+            className="focus:outline-none w-24 sm:w-64 mr-1 bg-transparent"
           />
           <button>
             <FaSearch className="text-slate-600" />
