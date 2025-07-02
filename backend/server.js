@@ -21,6 +21,10 @@ app.get("/", (req, res) => {
   res.send("Hello Node-Express");
 });
 
+const userRoutes = require("./routes/userRoutes");
+app.use(express.json());
+app.use("/api/v1/user", userRoutes); //=> localhost:8080/api/v1/user/test
+
 //* Strating express server
 app.listen(port, () =>
   console.log(`Server starting on port :${port} in ${node_env} mode.\n${url}`)
