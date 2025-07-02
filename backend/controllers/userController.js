@@ -1,6 +1,6 @@
 const testUser = (req, res) => {
   res.json({
-    message: "Api route is working!",
+    message: "User route is working!",
   });
 };
 

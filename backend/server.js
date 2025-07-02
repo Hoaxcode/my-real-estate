@@ -21,9 +21,11 @@ app.get("/", (req, res) => {
   res.send("Hello Node-Express");
 });
 
-const userRoutes = require("./routes/userRoutes");
+const userRoutes = require("./routes/userRoute");
+const authRoutes = require("./routes/authRoute");
 app.use(express.json());
 app.use("/api/v1/user", userRoutes); //=> localhost:8080/api/v1/user/test
+app.use("/api/v1/auth", authRoutes); //=> localhost:8080/api/v1/auth/signup
 
 //* Strating express server
 app.listen(port, () =>
